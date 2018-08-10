@@ -13,7 +13,7 @@ const typeDefs = fs.readFileSync(
 
 const schema = makeRemoteExecutableSchema({ link, schema: typeDefs })
 
-class MyPostBinding extends Binding {
+class MyUserBinding extends Binding {
 
   constructor() {
     super({ schema })
@@ -21,4 +21,4 @@ class MyPostBinding extends Binding {
 
 }
 
-module.exports = MyPostBinding
+module.exports = MyUserBinding
